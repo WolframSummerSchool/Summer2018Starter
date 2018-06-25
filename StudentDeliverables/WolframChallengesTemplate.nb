@@ -1,0 +1,1768 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     72511,       1760]
+NotebookOptionsPosition[     33746,       1031]
+NotebookOutlinePosition[     64139,       1635]
+CellTagsIndexPosition[     63683,       1617]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Your Title Here ]\"\>", "Title", "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Title"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Title",
+ DefaultNewCellStyle->"Title",
+ CellTags->{"ClickToEnter", "Title"}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[Cell[TextData[StyleBox["1. Put in your title above.\n2. Fill in \
+Challenge content below.\n3. Preview submission.\n4. Submit Challenge and \
+approve terms.",
+  FontFamily->"Source Sans Pro",
+  FontSize->12,
+  FontWeight->"SemiBold",
+  FontColor->GrayLevel[0.5]]], 
+  "AuthoringSectionCaption"]], "AuthoringSectionCaption",
+ CellGroupingRules->{"TitleGrouping", -1}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Description of Challenge\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(required)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"DescriptionOfChallenge", "Required"}],
+
+Cell["\<\
+Provide a short description for the Challenge that will go up on the website. \
+Try to limit the description to 1\[Dash]3 sentences. Start with a sentence \
+describing the premise of the Challenge if it is unclear from the title. \
+Follow that with a description of the coding Challenge that needs to be \
+solved.\
+\>", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Text"],
+
+Cell["For example: ", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Text"],
+
+Cell["\<\
+An anagram is a word or phrase created by rearranging the letters of another \
+word or phrase. For example, \[OpenCurlyDoubleQuote]phrase\
+\[CloseCurlyDoubleQuote] is an anagram of \[OpenCurlyDoubleQuote]seraph\
+\[CloseCurlyDoubleQuote] (an angel). Write a function that takes a word and \
+returns a list of anagrams from the dictionary.\
+\>", "AuthoringSectionCaption",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}},
+ DefaultNewCellStyle->"Text"]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter a description. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Text"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"ClickToEnter", "Text"}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"More Details\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(optional)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"MoreDetails", "Optional"}],
+
+Cell["\<\
+Introduce the Challenge by providing any background context, basic technical \
+details, a general description of the Challenge and examples. This \
+corresponds to the first block of text the users see in the Challenge \
+notebook. This description may be anything from one sentence to a couple of \
+paragraphs.\
+\>", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Text"],
+
+Cell[TextData[{
+ "You may include links to websites (such as ",
+ Cell[BoxData[
+  TemplateBox[{"\"MathWorld\"",{
+     URL["http://mathworld.wolfram.com"], None},
+    "http://mathworld.wolfram.com","Hyperlink",{"HyperlinkActive"},
+    BaseStyle -> {"Text", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ "\[LongDash]for example, ",
+ Cell[BoxData[
+  TemplateBox[{"\"Point\"",{
+     URL["http://mathworld.wolfram.com/Point.html"], None},
+    "http://mathworld.wolfram.com/Point.html","Hyperlink",{"HyperlinkActive"},
+    BaseStyle -> {"Text", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ ") or pages in the ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Documentation Center\"","paclet:guide/WolframRoot",
+    "paclet:guide/WolframRoot","Link",{"HyperlinkActive"},
+    BaseStyle -> {"Text", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ " (for example, ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Point\"","paclet:ref/Point","paclet:ref/Point","Link",{
+    "HyperlinkActive"},BaseStyle -> {"InlineCode", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ ")."
+}], "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Text"],
+
+Cell["Example:", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Text"],
+
+Cell["\<\
+The possible anagrams of the word \[OpenCurlyDoubleQuote]past\
+\[CloseCurlyDoubleQuote] are \[OpenCurlyDoubleQuote]spat\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]pats\[CloseCurlyDoubleQuote] \
+and \[OpenCurlyDoubleQuote]taps\[CloseCurlyDoubleQuote]. Find a way to \
+identify anagrams of a given word.\
+\>", "AuthoringSectionCaption",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}},
+ DefaultNewCellStyle->"Text"]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter more details. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Text"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"ClickToEnter", "Text"}],
+
+Cell[CellGroupData[{
+
+Cell["What Your Code Should Do", "Section"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Specify the form of the solution (function, classifier, etc.), the symbol \
+name, arguments, output and any other requirements. Include some example \
+input and output below.\
+\>", "AuthoringSectionCaptionStyle"],
+
+Cell["Example:", "AuthoringSectionCaptionStyle"],
+
+Cell[TextData[{
+ "Write a function ",
+ StyleBox["Listify", "InlineCode"],
+ " that takes a list ",
+ StyleBox["s", "InlineCode"],
+ " and a positive integer ",
+ StyleBox["n", "InlineCode"],
+ " and outputs a new list where each entry of ",
+ StyleBox["s", "InlineCode"],
+ " has been replaced by a list containing ",
+ StyleBox["n", "InlineCode"],
+ " copies of itself."
+}], "AuthoringSectionCaptionStyle"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["Listify",
+   StripOnInput->True,
+   FontColor->GrayLevel[0.55]], "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "5", "]"}], ",", "2"}], 
+  "]"}]], "AuthoringSectionCaptionStyle", "Input",
+ Evaluatable->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "5"}], "}"}]}], "}"}]], "AuthoringSectionCaptionStyle", \
+"Output",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}}]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter code specification text. ]\"\>", 
+    "Text", "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Text"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"ClickToEnter", "Text"}],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter some example input. Evaluate it to \
+show some example output. ]\"\>", "Text", "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell[
+      BoxData[""], "Input"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"ClickToEnter", "Input"}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "Subsection"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Add more example inputs and outputs. Emphasize examples that show what the \
+code should do in unusual cases. Note that this section will be closed when a \
+user opens the Challenge notebook.\
+\>", "AuthoringSectionCaptionStyle"],
+
+Cell["Example:", "AuthoringSectionCaptionStyle"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["Listify",
+   StripOnInput->True,
+   FontColor->GrayLevel[0.55]], "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], ",", "3"}], 
+  "]"}]], "AuthoringSectionCaptionStyle", "Input",
+ Evaluatable->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "a", ",", "a"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "b", ",", "b"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", "c", ",", "c"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"d", ",", "d", ",", "d"}], "}"}]}], 
+  "}"}]], "AuthoringSectionCaptionStyle", "Output"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["Listify",
+   StripOnInput->True,
+   FontColor->GrayLevel[0.55]], "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "\[HeartSuit]", "}"}], ",", 
+     RowBox[{"{", "\[SpadeSuit]", "}"}], ",", 
+     RowBox[{"{", "\[DiamondSuit]", "}"}], ",", 
+     RowBox[{"{", "\[ClubSuit]", "}"}]}], "}"}], ",", "3"}], 
+  "]"}]], "AuthoringSectionCaptionStyle", "Input",
+ Evaluatable->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "\[HeartSuit]", "}"}], ",", 
+     RowBox[{"{", "\[HeartSuit]", "}"}], ",", 
+     RowBox[{"{", "\[HeartSuit]", "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "\[SpadeSuit]", "}"}], ",", 
+     RowBox[{"{", "\[SpadeSuit]", "}"}], ",", 
+     RowBox[{"{", "\[SpadeSuit]", "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "\[DiamondSuit]", "}"}], ",", 
+     RowBox[{"{", "\[DiamondSuit]", "}"}], ",", 
+     RowBox[{"{", "\[DiamondSuit]", "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "\[ClubSuit]", "}"}], ",", 
+     RowBox[{"{", "\[ClubSuit]", "}"}], ",", 
+     RowBox[{"{", "\[ClubSuit]", "}"}]}], "}"}]}], 
+  "}"}]], "AuthoringSectionCaptionStyle", "Output"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["Listify",
+   StripOnInput->True,
+   FontColor->GrayLevel[0.55]], "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<a\>\"", ",", 
+     RowBox[{"{", "\"\<b\>\"", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"{", "\"\<c\>\"", "}"}], "}"}]}], "}"}], ",", "4"}], 
+  "]"}]], "AuthoringSectionCaptionStyle", "Input",
+ Evaluatable->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"a\"\>", ",", "\<\"a\"\>", ",", "\<\"a\"\>", 
+     ",", "\<\"a\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "\<\"b\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"b\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"b\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"b\"\>", "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", "\<\"c\"\>", "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"{", "\<\"c\"\>", "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"{", "\<\"c\"\>", "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"{", "\<\"c\"\>", "}"}], "}"}]}], "}"}]}], 
+  "}"}]], "AuthoringSectionCaptionStyle", "Output",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}}]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter more examples. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell[
+      BoxData[""], "Input"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"ClickToEnter", "Input"}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Things You May Find Useful", "Subsection"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Include some links or other information helpful for understanding or solving \
+the Challenge. Note that this section will be closed when a user opens the \
+Challenge notebook.\
+\>", "AuthoringSectionCaptionStyle"],
+
+Cell["Example:", "AuthoringSectionCaptionStyle"],
+
+Cell[TextData[ButtonBox["Wolfram MathWorld",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://mathworld.wolfram.com/"], None},
+ ButtonNote->"http://mathworld.wolfram.com/"]], "AuthoringSectionCaptionStyle",\
+
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}}]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter things a user may find useful. ]\"\>", 
+    "Text", "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Text"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"ClickToEnter", "Text"}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->{{0, 0}, {0, 1}},
+ ShowCellBracket->False,
+ CellMargins->{{66, 66}, {0, 40}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameColor->GrayLevel[0.85],
+ FontSize->0.1],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Input Section\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(optional)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ CellFrame->0,
+ CellMargins->{{66, 66}, {Inherited, 0}},
+ DefaultNewCellStyle->"Input",
+ CellTags->{"InputSection", "Optional"}],
+
+Cell["\<\
+Name the left-hand side of the function the user is supposed to define. \
+Provide all arguments and conditions required for the function.\
+\>", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell[TextData[{
+ "For example, if you were defining a function ",
+ StyleBox["f", "InlineCode"],
+ " to list the numbers from 1 to ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]]],
+ " using ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Range\"","paclet:ref/Range","paclet:ref/Range","Link",{
+    "HyperlinkActive"},BaseStyle -> {"InlineCode", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ ", the left-hand side ",
+ "would be:"
+}], "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], 
+  ":="}]], "AuthoringSectionCaption", "Input",
+ Selectable->True,
+ CellMargins->{{Inherited, Inherited}, {10 + Inherited, 5}},
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellLabelPositioning->Left,
+ CellFrameLabels->{{
+    Cell["(example)", "AuthoringSectionLabelExtra"], None}, {None, None}},
+ DefaultNewCellStyle->"Input",
+ AutoStyleOptions->{"UndefinedSymbolStyle"->{}}]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter input. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell[
+      BoxData[""], "Input"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"ClickToEnter", "Input"}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Solution\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(required)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"Solution", "Required"}],
+
+Cell["\<\
+Provide the solution to the Challenge. Make sure to define all variables and \
+helper functions used in the solution. By default, the user will not see the \
+solution.\
+\>", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell["For example:", "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], ":=", 
+  RowBox[{"Range", "[", "n", "]"}]}]], "AuthoringSectionCaption", "Input",
+ Selectable->True,
+ CellMargins->{{Inherited, Inherited}, {10 + Inherited, 5}},
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellLabelPositioning->Left,
+ CellFrameLabels->{{
+    Cell["(example)", "AuthoringSectionLabelExtra"], None}, {None, None}},
+ DefaultNewCellStyle->"Input",
+ AutoStyleOptions->{"UndefinedSymbolStyle"->{}}]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter the Challenge solution. ]\"\>", "Text",
+     "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell[
+      BoxData[""], "Input"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"ClickToEnter", "Input"}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Test Cases\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(required)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"TestCases", "Required"}],
+
+Cell[TextData[{
+ "Provide code that generates test cases on which ",
+ "the user\[CloseCurlyQuote]s solutions should be tested. The test case ",
+ "code should be an expression that uses Wolfram Language built-in ",
+ "functions to ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"randomly\"","paclet:guide/RandomNumberGeneration",
+    "paclet:guide/RandomNumberGeneration","Link",{"HyperlinkActive"},
+    BaseStyle -> {"Text", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ " generate sample inputs. The ",
+ "expression should evaluate to the form ",
+ Cell[BoxData[
+  RowBox[{"HoldComplete", "[", 
+   RowBox[{"YourFunctionName", "[", "yourSampleInputs", "]"}], "]"}]], 
+  "AuthoringSectionCaption", "Input",
+  Selectable->True,
+  CellMargins->{{Inherited, Inherited}, {10 + Inherited, 5}},
+  Evaluatable->False,
+  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+  CellLabelPositioning->Left,
+  CellFrameLabels->{{
+     Cell["(example)", "AuthoringSectionLabelExtra"], None}, {None, None}},
+  AutoStyleOptions->{"UndefinedSymbolStyle"->{}},
+  LanguageCategory->"Input"],
+ "."
+}], "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell[TextData[{
+ "For example, for ",
+ "the function ",
+ StyleBox["f", "InlineCode"],
+ ", this test case specifies that ",
+ StyleBox["f", "InlineCode"],
+ " should be applied to a random number up to 10, with an integer ",
+ "being five times as likely to be chosen as a real."
+}], "AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell[BoxData[
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"n", "=", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"5", ",", "1"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"RandomInteger", "[", "10", "]"}], ",", 
+         RowBox[{"RandomReal", "[", "10", "]"}]}], "}"}]}], "]"}]}], "}"}], 
+   ",", 
+   RowBox[{"HoldComplete", "[", 
+    RowBox[{"f", "[", "n", "]"}], "]"}]}], "]"}]], "AuthoringSectionCaption", \
+"Input",
+ Selectable->True,
+ CellMargins->{{Inherited, Inherited}, {10 + Inherited, 5}},
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellLabelPositioning->Left,
+ CellFrameLabels->{{
+    Cell["(example)", "AuthoringSectionLabelExtra"], None}, {None, None}},
+ DefaultNewCellStyle->"Input",
+ AutoStyleOptions->{"UndefinedSymbolStyle"->{}}],
+
+Cell["Here's an alternate way of specifying the same test case:", \
+"AuthoringSectionCaption",
+ DefaultNewCellStyle->"Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"HoldComplete", "[", 
+    RowBox[{"f", "[", "#", "]"}], "]"}], "&"}], "[", 
+  RowBox[{"RandomChoice", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"5", ",", "1"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"RandomInteger", "[", "10", "]"}], ",", 
+      RowBox[{"RandomReal", "[", "10", "]"}]}], "}"}]}], "]"}], 
+  "]"}]], "AuthoringSectionCaption", "Input",
+ Selectable->True,
+ CellMargins->{{Inherited, Inherited}, {10 + Inherited, 5}},
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellLabelPositioning->Left,
+ CellFrameLabels->{{
+    Cell["(example)", "AuthoringSectionLabelExtra"], None}, {None, None}},
+ DefaultNewCellStyle->"Input",
+ AutoStyleOptions->{"UndefinedSymbolStyle"->{}}]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter test cases. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell[
+      BoxData[""], "Input"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Input",
+ CellTags->{"ClickToEnter", "Input"}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Authors\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(optional)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"Authors", "Optional"}],
+
+Cell["\<\
+For single authors: \[OpenCurlyDoubleQuote]Contributed by: John Smith\
+\[CloseCurlyDoubleQuote]; for multiple authors: \
+\[OpenCurlyDoubleQuote]Contributed by: John Smith and Jane Doe\
+\[CloseCurlyDoubleQuote].\
+\>", "AuthoringSectionCaption",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}},
+ DefaultNewCellStyle->"Text"]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter authoring information. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Text"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"ClickToEnter", "Text"}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Categories\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(optional)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"Categories", "Optional"}],
+
+Cell["\<\
+Check all categories relevant to the Challenge. Use the input field to add \
+custom tags.\
+\>", "AuthoringSectionCaption",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}},
+ DefaultNewCellStyle->"Text"]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  DynamicModuleBox[{WolframChallenges`Notebooks`Authoring`Private`checkedQ$$ =
+    False, WolframChallenges`Notebooks`Authoring`Private`newTag$$ = {
+    Checkbox[
+     Dynamic[WolframChallenges`Notebooks`Authoring`Private`checkedQ$$]], 
+    EventHandler[
+     InputField[
+      Dynamic[WolframChallenges`Notebooks`Authoring`Private`tagString$$], 
+      String, FieldHint -> "Enter a custom tag", 
+      ImageSize -> {130, Automatic}], {
+     "ReturnKeyDown" :> (
+       WolframChallenges`Notebooks`Authoring`Private`checkedQ$$ = True; 
+       SelectionMove[
+         InputNotebook[], Before, Cell]; NotebookFind[
+         SelectedNotebook[], "Enter a custom tag"])}]}, 
+   WolframChallenges`Notebooks`Authoring`Private`tagString$$ = "", 
+   WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$ = 
+   Association[{
+    "Algorithms" -> False, "Arrays" -> False, "Computational Knowledge" -> 
+     False, "Computational Sciences" -> False, "Lists" -> False, 
+     "Mathematics" -> False, "Primes" -> False, "Sequences" -> False, 
+     "Start Here" -> False, "Words and Linguistics" -> False}], 
+   WolframChallenges`Notebooks`Authoring`Private`categories$$ = {{
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Algorithms"]]], 
+     Style["Algorithms", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Arrays"]]], 
+     Style["Arrays", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Computational Knowledge"]]], 
+     Style["Computational Knowledge", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Computational Sciences"]]], 
+     Style["Computational Sciences", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Lists"]]], 
+     Style["Lists", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Mathematics"]]], 
+     Style["Mathematics", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Primes"]]], 
+     Style["Primes", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Sequences"]]], 
+     Style["Sequences", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Start Here"]]], 
+     Style["Start Here", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[
+       WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+       "Words and Linguistics"]]], 
+     Style["Words and Linguistics", LineIndent -> 0]}, {
+     Checkbox[
+      Dynamic[WolframChallenges`Notebooks`Authoring`Private`checkedQ$$]], 
+     EventHandler[
+      InputField[
+       Dynamic[WolframChallenges`Notebooks`Authoring`Private`tagString$$], 
+       String, FieldHint -> "Enter a custom tag", 
+       ImageSize -> {130, Automatic}], {
+      "ReturnKeyDown" :> (
+        WolframChallenges`Notebooks`Authoring`Private`checkedQ$$ = True; 
+        SelectionMove[
+          InputNotebook[], Before, Cell]; NotebookFind[
+          SelectedNotebook[], "Enter a custom tag"])}]}}, 
+   WolframChallenges`Notebooks`Authoring`Private`trueTags$$ = {}}, 
+   DynamicBox[ToBoxes[
+    If[WolframChallenges`Notebooks`Authoring`Private`checkedQ$$, 
+       If[WolframChallenges`Notebooks`Authoring`Private`tagString$$ =!= "", 
+         With[{
+          WolframChallenges`Notebooks`Authoring`Private`c$ = 
+           GeneralUtilities`ToTitleCase[
+             ToLowerCase[
+             WolframChallenges`Notebooks`Authoring`Private`tagString$$]]}, 
+          WolframChallenges`Notebooks`Authoring`Private`tagString$$ = ""; 
+          WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$$[
+            WolframChallenges`Notebooks`Authoring`Private`c$] = True; If[
+            FreeQ[WolframChallenges`Notebooks`Authoring`Private`categories$$, {
+              Checkbox[
+               Dynamic[
+                
+                WolframChallenges`Notebooks`Authoring`Private`$CheckedTagData$\
+$[WolframChallenges`Notebooks`Authoring`Private`c$]]], 
+              Style[
+              WolframChallenges`Notebooks`Authoring`Private`c$, LineIndent -> 
+               0]}], Part[
+              WolframChallenges`Notebooks`Authoring`Private`categories$$, -1] = {
+               Checkbox[
+                Dynamic[
+                 
+                 WolframChallenges`Notebooks`Authoring`Private`$\
+CheckedTagData$$[WolframChallenges`Notebooks`Authoring`Private`c$]]], 
+               Style[
+               WolframChallenges`Notebooks`Authoring`Private`c$, LineIndent -> 
+                0]}; AppendTo[
+             WolframChallenges`Notebooks`Authoring`Private`categories$$, 
+              WolframChallenges`Notebooks`Authoring`Private`newTag$$]; 
+            Null]]]; WolframChallenges`Notebooks`Authoring`Private`checkedQ$$ = 
+        False; Null]; Grid[
+       Map[Flatten, 
+        Block[{WolframChallenges`Notebooks`Authoring`Private`$empty}, 
+         ReplaceAll[
+          Partition[
+          WolframChallenges`Notebooks`Authoring`Private`categories$$, 
+           UpTo[3], 3, 1, 
+           WolframChallenges`Notebooks`Authoring`Private`$empty], 
+          WolframChallenges`Notebooks`Authoring`Private`$empty -> {"", ""}]]],
+        Alignment -> {{{Center, Left}}, Center}, ItemSize -> {{
+          Scaled[0.025], 
+          Scaled[0.275], 
+          Scaled[0.025], 
+          Scaled[0.275], 
+          Scaled[0.025], 
+          Scaled[0.275]}, 1.5}, BaseStyle -> {ShowStringCharacters -> False}],
+      StandardForm],
+    ImageSizeCache->{644., {42.4169921875, 47.5830078125}}],
+   DynamicModuleValues:>{}], "Panel",
+  StripOnInput->False,
+  Background->GrayLevel[1]]], "TagGrid",
+ Deletable->False,
+ ShowStringCharacters->
+  False,ExpressionUUID->"423adac6-0817-4fd0-ba31-dcf8bdd49907"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Author Email\"\>", "AuthoringSectionLabel",
+      StripOnInput->False], 
+     StyleBox["\<\"(optional)\"\>", "AuthoringSectionLabelExtra",
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {Left, Left}, "Rows" -> {{Automatic}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "AuthoringSection",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"AuthorEmail", "Optional"}],
+
+Cell[TextData[{
+ "If you prefer to use an email address other than your ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"$WolframID\"","paclet:ref/$WolframID","paclet:ref/$WolframID","Link",{
+    "HyperlinkActive"},BaseStyle -> {"InlineCode", "Hyperlink"}},
+   "HyperlinkTemplate"]]],
+ " as a means of contact, you may enter it here."
+}], "AuthoringSectionCaption",
+ CellMargins->{{Inherited, Inherited}, {20, Inherited}},
+ DefaultNewCellStyle->"Text"]
+}, Open  ]],
+
+Cell[BoxData[
+ ButtonBox[
+  PaneBox[
+   StyleBox["\<\"[ Click here to enter your email. ]\"\>", "Text", 
+    "ClickToEnterLabel",
+    StripOnInput->False],
+   ShowStringCharacters -> False,
+   ImageSize->Full],
+  Appearance->None,
+  ButtonFunction:>((SelectionMove[
+     InputNotebook[], All, ButtonCell]; NotebookWrite[
+     InputNotebook[], 
+     Cell["", "Text"]]; SelectionMove[
+     InputNotebook[], Before, CellContents]; Null)& )[],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Text",
+ DefaultNewCellStyle->"Text",
+ CellTags->{"ClickToEnter", "Text"}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Automatic, Automatic},
+WindowMargins->{{Automatic, Automatic}, {Automatic, Automatic}},
+DockedCells->{
+  Cell[
+   BoxData[
+    TagBox[
+     GridBox[{{
+        ButtonBox[
+         TagBox[
+          GridBox[{{
+             GraphicsBox[
+              TagBox[
+               RasterBox[CompressedData["
+1:eJzVmguUlVUVx4eXTDCoMSKGyEMFRzSjpNBhyiTB0KQionKQsdHoIQnlAysS
+zAdQmVApGtCIkiudLElMYyQwWVaQr1JBMrUkK8wCMsznbv86+1v3zLnn+747
+1zu43Gv91/0e55y993ns13eHNs+c1NytqqqqXtGg6F5VeRKRbop9KzDOmxmr
+EjJ1Fql8H1H8VbHQ7gcqWhS/UMxBh0iffRVftjbX0seez1f8TTFlT+uRRirL
+YMUYu+6v+K84ajJd/ywF4t3xkTGO9/pBT1nfJrt/QXGgtT0WnntaT+N9ouI5
+xUq7n+TJ/EVkVHxGsUpxs2J0xljvsjY/tT7o+wVvvMnWboXiP4rxe0pPT8ZH
+TZab7L5B8aIn465y1sLmaZc3zkveHrrRnm2ptD4ROfZW1Hn3rxrvB+ysTWUN
+xZ3Xla9lDbTvOMX1NtYxikbjcb/xhHdXa3u4Yp9K6OjxZ389rrjde+afTWi7
+mK3pBN5/D3ht896vVjxRSd461lrjg13pYc/qFT9RbFa0KoZWil+E/xDj8Yjx
+rLfnXRXPm2zrK8SrbzC3w+15jw6Os5fiSMVE2/tnKj6qeLdi/w6Olcz5oEC2
+fh0ZJ2Xsg4IxH1PsVryiWJzT9wDFTMU6W4cd4s5gm2GD4klx5/EPiiWK4xRd
+MsZcaLx3Wx+fhpSp41jFSLvuoviTFNPLioaU/oeKix2Q6Q7FGYqDM/j1VoxX
+fFvcWX1YcZqYTQra1hvvkJ5K5kl/j1JMKFHXg2wdtiqq7dkZNqcJ7USeSN/u
+inni/PI1Ymfa9J8hzm7/WvFHw0OK2xSXKk5Q9BC375ttjn+lODLCZ6rJmBCy
+Ndm7nib7vxWDStB3mTfOLO/5IYoPizt/fSP9Bph89yneJs6WTFbc442Hz74u
+sjYJsbbsV2K1Nykus7k7PcKvr8lCnHOI9/zz3njLS9B3i9ees1otLrbDLrI3
+R0T64AOftLlifo8y3X1K4sRRGfomxNpx7jlL+OJ/KS6M8K0zmW4xGZF1qzfO
+1hL03Rzwfta7JpbtG7QfaLpcZveflIKPSIgYiVhkgs3N48H7VSl6367YR5xd
+x79fEFnjF1JkhXLjMG1zVQpv6IagLWt5r2KJ3X8ppR/78h3i5uECxTe8d98T
+d2ZfjfSDHlT0U7xT3N4+KZBhRYa8V5Wg72BxZz0k1nBA0PZb4vYt8k5P4fm0
+oo9ik93jg0bb9SJxNop5+0eG3Ng49io2+xnx/Kxev8VkCwkdhqToyDnp6t1/
+QFzuCWGLWxg36MMZZb45Q2+X9vvKp1mKU7x7bCn26CzTk7M3Qpy9zqKrjS85
+1LJAFvz898WdczHZJ3rvsZ1dvPv3KTYqhgVzUGPXvSNz9GPF5eLqGfemyEie
+UyPO5/jUJM7nttn9W6WQC6QR+51cGT9BXHtoIE9v+60JdDvMdDvBe3a9jcl5
+H+Xpe444O7EqGBt/+rzN66kZMuKDsWdhfMBcnezdI9PdOfpC9xh/fNqSQCb2
+CWfiXCnEHUcr/ml9V3htH/DGRL/h0t4PrwnGvkjRatf3pcjGvsVGzYu84xwM
+9O4HlagvRG2AXBuf1dOT6Q6vTYu4NdnuPdvktf1lMObu4P66QF90/JjiiAy5
+qFdhp55JeU9/6lb4qv2ldH0XiNt72MFxnkzX5uiwwWs7N4fHNK8teT9rh484
+J6U984fNbkt5D1GXOUnxHkUvKV3fLSYHsek8T66pOf0u9tpS+wzz94TY6z28
+ttTM/mLXN0Tas17EB+eVIDv1n1MDG1IK7aeYrbjRkwu/tjGlPXFiu9qouDP7
+SNDuTkX/oB37MLEbv42Mvdjk2Vmi7Nhd4hRyjSUl9sF/U/vdGMhGLPbzoC3x
+4nCvTR/vGh/xOXH2iPrjNAlycXFxxW12Heaf2AfqyReXIPNzwT3rS0xxeuRd
+SO8Xlz9uDmTrZzKPNx3w8TW+ruL2AHMyMuiX+NTGiL6r7fpRaU/4AvKaxEYx
+t+sj8uI/9zZ8Wgr1KezgcEPa3oTIIU6M6Jv4RvLn/t7zkeLsNzolc8lZwv4Q
+P6z1xr4osp832PVvvHZ8V8DuUEtkj14ozj/HYtMXre9Xxdmrpd472pNzcB4v
+EWcPQiLH+jhjBLL5vg/7xxmZJYU68e6IPA8F9wuCMamPbrPrlV67s+0Z87hN
+MUXc+uFrvhOROY+ovw8w3R4M3pEXkXf8MJDt0hxd8AlrcvhODcZEh5dNj+Qb
+AOeWfXygtI+lsEOcmd/lKZdCrMXZ4nzbXHEx+mMmB/XKeYFsjTnjoWtaPQjC
+R/WqCkicXeas1Fm7Ofb8fK8v8T/76bsdVTIgfP3/a+ri6szUuIj/OT9jA7k4
+T7FaG8QZa7B2TVIcj5BjEH9SH9kvGHeuFGwWMUWtXfs2Bv9LHITfqLex8N0f
+FGc3v6ZYLq5efr/J79fIEsJ3Yj9b7R5fRN5AXLyXJ1OtyUoM+3QwBvbxzEAH
+Ytirxa3dleJ86Ces/eqg7VCx73Zi9Q5x8bCfs/Pdi/rVdNMd/YgFOXfksdSe
+a4Jx2Q/JmT3F+pIrnmtj3mXtfoCMQd+kRtJosl9pupAHDKsqgcTl2QmND94x
+39d492dF1iaPFlhfvh9QB7hVXE41V/FZcTEitZFXDOwTcql2+aC4+nFC7WKQ
+FL162nyT55MD4JOIPXxf0BL0oR054RF2n2f3YoSfqLP+8E+r6UCLrN3PxHJ/
+TxY/l8MW1ZgOI0wnxq722rOP/PNLnSCME9ZH5onaKXsG+5n43Y7Snd54aXHZ
+WuPBNxjsSm0gx9qg/V1SqHVArEv3oM+PcuRqV0OxPsjAnl9u98Qr5eg8xfpj
+38JaJTEXthm/z5qMi8ixVLLplkgfYq60GhR0nDhbG84TdgobeoXdY4tiMVUW
+EZ8ktSN0e9ieozv+ntokMep5AW/2JXHNmIyxOTOjQn2tP/rsivTBHjbYNXun
+T9DvYHH+Non58cvrOqjzQm88ahPNdj3BZDo/4NlLCvuYb4wrI2My75Njunrj
+UDvkWw824CZx/p2x/Xz25pR+5Pm/l0INjBoVOWUpe5x1OMwbD5vzTdO1McKv
+1es722RcbDIvMx0OyNI1Zx7mB/IV7RFxNnGOzSt18GH2HD/9KXH+HTtIDYHv
+HuQMxMnkFg3WH7nx3cQM+Ki6CJ9jA1nml6tXMC5zPFjcfr084DE7ox+xCzYE
+u8j/qvDN+M2i75vWnpz5ZJuPZ20+yMOi34FtTn1aZDIia02sT46e1M/z6t/k
+0+QIxJPTYrqIyylmWBtyE+wrucPd9myTFGI/cmVi7TGhnuLiZXisMZ6xmqdP
+2Lui76gZ+naX4u9mIfFt9L3ePXuvNmNM8lnWmHUkd20SF28ek9OvVtrX8oid
+P5QjG/sjupcy+BB3x2w1xJrge8cGz9G5Yn/LFHeew7rlOOMd5gQJIfPRZfIj
+ZiR/T+LKl0ynSfaeuDzMaZorqO9pwdjY+X72bqLJ4suGrCXv4wy++FTOYtH/
+VaV9TgGtiY1RJt+w1rgp0qabyVYdG6NCclCXIl6+Qorz6x0V5LMjGBte2GLy
+prJ9awf4U2fge2RaPSShoppIGbyqc3ggA/nj4ZXQLUUGzkwpsRI5K7a7w3tM
+nG8gz72kBD7IUpQ/VJLE1c/S8gpies5cUuPF5/Ltlxr+gIwxOX/UYMnRkj1M
+rIKP3i5xQoaZnamrJx+xDD7/VpOJ2JHvAkmOg6/FVxGTPWHyYceJr2fYe2wA
+cdc6KZwP6oPUYailJ//9IsZrMh5txhPeqf9fez1JXE472nSfK+4baJsU/Bh+
+lDi/KK56o5K4+J5aZJIXE1fybfHr4vK4Fsn4//sbgcTV2Tm3fo2f703815/v
+A+RB5Ex+DZdaxnQpI+Z/vUhcrk7cn3wPJa9ttfOclu9QWyE3SuzcTjvHrzlW
+6mwSl0ewX4kNviLB/5hy+pIX8o0m+U/g0s6UtVIkrr5btu0Rl//l/re1HPof
+GoD8eA==
+                "], {{0, 58}, {60, 0}}, {0, 255}, ColorFunction -> 
+                RGBColor], 
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> "RGB", Interleaving -> True], Selectable -> 
+               False], DefaultBaseStyle -> "ImageGraphics", 
+              ImageSizeRaw -> {60, 58}, PlotRange -> {{0, 60}, {0, 58}}], 
+             TagBox[
+              GridBox[{{
+                 StyleBox[
+                 "\"WOLFRAM CHALLENGES\"", FontSize -> 30, FontFamily -> 
+                  "Source Sans Pro", FontWeight -> "SemiBold", FontColor -> 
+                  GrayLevel[1], ShowStringCharacters -> False, StripOnInput -> 
+                  False]}, {
+                 StyleBox[
+                 "\"Authoring Notebook\"", FontSize -> 16, FontFamily -> 
+                  "Source Sans Pro Light", FontColor -> GrayLevel[1], 
+                  ShowStringCharacters -> False, StripOnInput -> False]}}, 
+               GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+               "Column", 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+              "Column"]}}, 
+           GridBoxAlignment -> {
+            "Columns" -> {Left, Left}, "Rows" -> {Center, Center}}, 
+           AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
+         ButtonFunction :> SystemOpen["http://challenges.wolfram.com/"], 
+         Appearance -> None, Evaluator -> Automatic, Method -> "Preemptive"], 
+        "\" \"", "\" \"", 
+        TagBox[
+         GridBox[{{
+            StyleBox[
+            "\"Authoring Tools\"", FontSize -> 14, FontFamily -> 
+             "Source Sans Pro Light", FontColor -> GrayLevel[1], 
+             ShowStringCharacters -> False, StripOnInput -> False]}, {
+            TemplateBox[{
+              
+              DynamicModuleBox[{
+               WolframChallenges`Notebooks`Elements`Private`$ready$$ = True}, 
+               
+               ButtonBox[
+                DynamicBox[
+                 ToBoxes[
+                  If[
+                   TrueQ[
+                    Replace[
+                    WolframChallenges`Notebooks`Elements`Private`$ready$$, 
+                    Except[
+                    Alternatives[True, False]] :> (
+                    WolframChallenges`Notebooks`Elements`Private`$ready$$ = 
+                    True)]], 
+                   Mouseover[
+                    Framed[
+                    Style[
+                    "Preview", "Text", FontFamily -> "Source Sans Pro", 
+                    FontSize -> 12, FontColor -> 
+                    RGBColor[
+                    0.996078431372549, 0.3058823529411765, 
+                    0.21568627450980393`]], Background -> GrayLevel[1], 
+                    FrameStyle -> GrayLevel[1], RoundingRadius -> 2, 
+                    ImageSize -> {Automatic, 28}, Alignment -> Center], 
+                    Framed[
+                    Style[
+                    "Preview", "Text", FontFamily -> "Source Sans Pro", 
+                    FontSize -> 12, FontColor -> GrayLevel[1]], Background -> 
+                    RGBColor[
+                    0.996078431372549, 0.3058823529411765, 
+                    0.21568627450980393`], FrameStyle -> GrayLevel[1], 
+                    RoundingRadius -> 2, ImageSize -> {Automatic, 28}, 
+                    Alignment -> Center]], 
+                   Framed[
+                    ProgressIndicator[Appearance -> "Percolate"], Background -> 
+                    GrayLevel[1], FrameStyle -> GrayLevel[1], RoundingRadius -> 
+                    2, ImageSize -> {Automatic, 28}, Alignment -> Center]], 
+                  StandardForm]], ButtonFunction :> If[
+                  Or[$VersionNumber >= 11.1, 
+                   Once[
+                    ChoiceDialog[
+                    StringJoin[
+                    "Wolfram Challenges is designed for version ", 
+                    ToString[11.1], 
+                    " or later of the Wolfram System, and may not function \
+properly with the older ", 
+                    "kernel you are using. Contact Wolfram Research \
+(www.wolfram.com) for upgrade information."]]]], 
+                  Internal`WithLocalSettings[
+                  WolframChallenges`Notebooks`Elements`Private`$ready$$ = 
+                   False, 
+                   Catch[
+                    Catch[
+                    Quiet[
+                    CheckAbort[
+                    
+                    Block[{Print, $CloudBase = 
+                    "https://www.wolframcloud.com"}, 
+                    
+                    With[{WolframChallenges`Notebooks`Elements`Private`f$ = 
+                    Once[
+                    CloudGet[
+                    CloudObject[
+                    "https://www.wolframcloud.com/objects/wolframchallenges/\
+public/symbols/PreviewAuthoringNotebook"]]]}, 
+                    If[
+                    WolframChallenges`Notebooks`Elements`Private`f$ =!= 
+                    Symbol["WolframChallenges`Notebooks`Authoring`\
+PreviewAuthoringNotebook"], Unset[
+                    Once[
+                    CloudGet[
+                    CloudObject[
+                    "https://www.wolframcloud.com/objects/wolframchallenges/\
+public/symbols/PreviewAuthoringNotebook"]]]]; 
+                    MessageDialog[
+                    "There was a problem processing your request. Please try \
+again later."], 
+                    WolframChallenges`Notebooks`Elements`Private`f$[
+                    ButtonNotebook[]]]]], $Aborted]]], 
+                    Blank[], HoldComplete], 
+                   WolframChallenges`Notebooks`Elements`Private`$ready$$ = 
+                   True]], Appearance -> None, Method -> "Queued", Enabled -> 
+                Dynamic[
+                 WolframChallenges`Notebooks`Elements`Private`$ready$$], 
+                Evaluator -> Automatic], 
+               Initialization :> {
+                WolframChallenges`Notebooks`Elements`Private`$ready$$ = True},
+                DynamicModuleValues :> {}], 
+              TemplateBox[{5}, "Spacer1"], 
+              
+              DynamicModuleBox[{
+               WolframChallenges`Notebooks`Elements`Private`$ready$$ = True}, 
+               
+               ButtonBox[
+                DynamicBox[
+                 ToBoxes[
+                  If[
+                   TrueQ[
+                    Replace[
+                    WolframChallenges`Notebooks`Elements`Private`$ready$$, 
+                    Except[
+                    Alternatives[True, False]] :> (
+                    WolframChallenges`Notebooks`Elements`Private`$ready$$ = 
+                    True)]], 
+                   Mouseover[
+                    Framed[
+                    Style[
+                    "Submit Challenge", "Text", FontFamily -> 
+                    "Source Sans Pro", FontSize -> 12, FontColor -> 
+                    RGBColor[
+                    0.996078431372549, 0.3058823529411765, 
+                    0.21568627450980393`]], Background -> GrayLevel[1], 
+                    FrameStyle -> GrayLevel[1], RoundingRadius -> 2, 
+                    ImageSize -> {Automatic, 28}, Alignment -> Center], 
+                    Framed[
+                    Style[
+                    "Submit Challenge", "Text", FontFamily -> 
+                    "Source Sans Pro", FontSize -> 12, FontColor -> 
+                    GrayLevel[1]], Background -> 
+                    RGBColor[
+                    0.996078431372549, 0.3058823529411765, 
+                    0.21568627450980393`], FrameStyle -> GrayLevel[1], 
+                    RoundingRadius -> 2, ImageSize -> {Automatic, 28}, 
+                    Alignment -> Center]], 
+                   Framed[
+                    ProgressIndicator[Appearance -> "Percolate"], Background -> 
+                    GrayLevel[1], FrameStyle -> GrayLevel[1], RoundingRadius -> 
+                    2, ImageSize -> {Automatic, 28}, Alignment -> Center]], 
+                  StandardForm]], ButtonFunction :> If[
+                  Or[$VersionNumber >= 11.1, 
+                   Once[
+                    ChoiceDialog[
+                    StringJoin[
+                    "Wolfram Challenges is designed for version ", 
+                    ToString[11.1], 
+                    " or later of the Wolfram System, and may not function \
+properly with the older ", 
+                    "kernel you are using. Contact Wolfram Research \
+(www.wolfram.com) for upgrade information."]]]], 
+                  Internal`WithLocalSettings[
+                  WolframChallenges`Notebooks`Elements`Private`$ready$$ = 
+                   False, 
+                   Catch[
+                    Catch[
+                    Quiet[
+                    CheckAbort[
+                    
+                    Block[{Print, $CloudBase = 
+                    "https://www.wolframcloud.com"}, 
+                    
+                    With[{WolframChallenges`Notebooks`Elements`Private`f$ = 
+                    Once[
+                    CloudGet[
+                    CloudObject[
+                    "https://www.wolframcloud.com/objects/wolframchallenges/\
+public/symbols/SubmitAuthoringNotebook"]]]}, 
+                    If[
+                    WolframChallenges`Notebooks`Elements`Private`f$ =!= 
+                    Symbol["WolframChallenges`Notebooks`Authoring`\
+SubmitAuthoringNotebook"], Unset[
+                    Once[
+                    CloudGet[
+                    CloudObject[
+                    "https://www.wolframcloud.com/objects/wolframchallenges/\
+public/symbols/SubmitAuthoringNotebook"]]]]; 
+                    MessageDialog[
+                    "There was a problem processing your request. Please try \
+again later."], 
+                    WolframChallenges`Notebooks`Elements`Private`f$[
+                    ButtonNotebook[]]]]], $Aborted]]], 
+                    Blank[], HoldComplete], 
+                   WolframChallenges`Notebooks`Elements`Private`$ready$$ = 
+                   True]], Appearance -> None, Method -> "Queued", Enabled -> 
+                Dynamic[
+                 WolframChallenges`Notebooks`Elements`Private`$ready$$], 
+                Evaluator -> Automatic], 
+               Initialization :> {
+                WolframChallenges`Notebooks`Elements`Private`$ready$$ = True},
+                DynamicModuleValues :> {}]}, "RowDefault"]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+          "Column", 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]}},
+       AutoDelete -> False, 
+      GridBoxDividers -> {
+       "ColumnsIndexed" -> {3 -> GrayLevel[1]}, "Rows" -> {{None}}}, 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"]], 
+   "Text", ShowCellBracket -> False, CellMargins -> 0, 
+   CellFrameMargins -> {{50, 0}, {4, 4}}, CellFrameColor -> 
+   RGBColor[0.9961, 0.3098, 0.21569], Background -> 
+   RGBColor[0.9961, 0.3098, 0.21569], ShowStringCharacters -> False], 
+  Cell["", "Text", CellMargins -> 0, ShowCellBracket -> False, 
+   CellElementSpacings -> {"CellMinHeight" -> 5}, CellFrameMargins -> 3, 
+   FontSize -> 1, CellFrame -> 0, Background -> 
+   RGBColor[0.9686274509803922, 0.9137254901960784, 0.403921568627451]]},
+TaggingRules->{
+ "WolframChallengesInternal" -> 
+  Association[
+   "PacletVersion" -> "2.16.51", "FrameworkVersion" -> "public-2.16.51", 
+    "PacletBuildDate" -> 
+    DateObject[{2018, 2, 28, 22, 42, 36.2518923`9.31190557205518}, "Instant", 
+      "Gregorian", 0.], "NotebookBuildDate" -> 
+    DateObject[{2018, 2, 28, 22, 52, 50.8597036`9.458948677650701}, "Instant",
+       "Gregorian", 0.]]},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["Title"], ShowCellBracket -> False, ShowGroupOpener -> False, 
+    CellMargins -> {{65.14453125, 30}, {0., 30.}}, 
+    CellFrameMargins -> {{66, Inherited}, {Inherited, 20}}, FontFamily -> 
+    "Source Sans Pro Light", FontSize -> 50, FontColor -> 
+    RGBColor[0.1843137254901961, 0.6509803921568628, 0.6941176470588235]], 
+   Cell[
+    StyleData["Section"], Editable -> True, Selectable -> True, Deletable -> 
+    True, CellFrame -> {{0, 0}, {0, 1}}, ShowCellBracket -> False, 
+    ShowGroupOpener -> False, CellMargins -> {{66, 30}, {Inherited, 35}}, 
+    Deployed -> False, CellFrameMargins -> {{0, Inherited}, {Inherited, 10}}, 
+    CellFrameColor -> GrayLevel[0.7137], FontFamily -> "Source Sans Pro", 
+    FontSize -> 17, FontWeight -> "DemiBold", FontColor -> 
+    Hue[0.51, 0.817, 0.72]], 
+   Cell[
+    StyleData["SectionNoLine", StyleDefinitions -> StyleData["Section"]], 
+    CellFrame -> {{0, 0}, {0, 0}}, CellMargins -> {{49, 30}, {4, 0}}], 
+   Cell[
+    StyleData["SectionOnlyLine", StyleDefinitions -> StyleData["Section"]], 
+    CellMargins -> {{66, 30}, {4, 35}}, 
+    CellElementSpacings -> {"CellMinHeight" -> 1}, CellFrameMargins -> 0, 
+    FontSize -> 0.1], 
+   Cell[
+    StyleData["Subsection", StyleDefinitions -> StyleData["Section"]], 
+    Editable -> True, Selectable -> True, Deletable -> True, ShowCellBracket -> 
+    True, ShowGroupOpener -> True, WholeCellGroupOpener -> True, Deployed -> 
+    False], 
+   Cell[
+    StyleData["Text"], ShowCellBracket -> True, 
+    CellMargins -> {{66, 30}, {Inherited, Inherited}}, FontFamily -> 
+    "Source Sans Pro", FontSize -> 16, FontWeight -> "Regular", FontSlant -> 
+    "Plain", PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+    FontColor -> 
+    RGBColor[0.3254901960784314, 0.3254901960784314, 0.3254901960784314]], 
+   Cell[
+    StyleData["Item"], CellDingbat -> 
+    StyleBox["\[FilledSmallSquare]", Alignment -> Baseline, 
+      RGBColor[0.21176470588235294`, 0.6941176470588235, 0.7490196078431373]],
+     CellMargins -> {{81, 30}, {Inherited, Inherited}}, FontFamily -> 
+    "Source Sans Pro", FontSize -> 16, FontWeight -> "Regular", FontSlant -> 
+    "Plain", PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, 
+    FontColor -> 
+    RGBColor[0.3254901960784314, 0.3254901960784314, 0.3254901960784314]], 
+   Cell[
+    StyleData["Description"], ShowCellBracket -> False, 
+    CellMargins -> {{71, 30}, {0, 10}}, 
+    AutoStyleOptions -> {
+     "LocalVariableStyle" -> {FontColor -> RGBColor[0.263, 0.537, 0.345]}}, 
+    LineSpacing -> {1.2, 0}, FontFamily -> "Source Sans Pro", FontSize -> 20, 
+    FontSlant -> "Plain", 
+    PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, FontColor -> 
+    GrayLevel[0.3]], 
+   Cell[
+    StyleData["WCIntroDivider"], Editable -> False, Selectable -> False, 
+    Deletable -> False, ShowCellBracket -> False, 
+    CellMargins -> {{66, 30}, {-2, 35}}, ShowStringCharacters -> False], 
+   Cell[
+    StyleData["WCIntroDividerLine", StyleDefinitions -> StyleData["Text"]], 
+    Editable -> False, Selectable -> False, Deletable -> False, 
+    CellFrame -> {{0, 0}, {0, 8}}, ShowCellBracket -> False, 
+    CellMargins -> {{66, 30}, {15, 0}}, 
+    CellElementSpacings -> {"CellMinHeight" -> 1}, 
+    CellFrameMargins -> {{0, 0}, {-1, 0}}, CellFrameColor -> 
+    RGBColor[0.9961, 0.3098, 0.21569], FontSize -> 1], 
+   Cell[
+    StyleData["SubmitRow"], Editable -> False, Selectable -> False, Deletable -> 
+    False, CellFrame -> {{0, 0}, {0, 2}}, ShowCellBracket -> False, 
+    CellMargins -> {{66, 30}, {15, 30}}, 
+    CellGroupingRules -> {"SectionGrouping", -5}, 
+    CellFrameMargins -> {{Inherited, Inherited}, {20, 20}}, CellFrameColor -> 
+    RGBColor[0.996078431372549, 0.3058823529411765, 0.21568627450980393`]], 
+   Cell[
+    StyleData["StandardForm"], FontSize -> 13], 
+   Cell[
+    StyleData["CodeFont"], FontSize -> 
+    FEPrivate`If[False, 0.907029 Inherited, Inherited]], 
+   Cell[
+    StyleData["RefLink"], TemplateBoxOptions -> {DisplayFunction :> (TagBox[
+        ButtonBox[#, ButtonData -> #2, BaseStyle -> Dynamic[
+           If[
+            CurrentValue["MouseOver"], {
+            "Link", FontColor -> RGBColor[0.854902, 0.396078, 0.145098]}, {
+            "Link"}]]], 
+        MouseAppearanceTag["LinkHand"]]& )}, 
+    ButtonBoxOptions -> {BaseStyle -> "Link"}], 
+   Cell[
+    StyleData["InlineCode", StyleDefinitions -> StyleData["StandardForm"]]], 
+   Cell[
+    StyleData["SmallText", StyleDefinitions -> StyleData["Text"]], FontSize -> 
+    0.975 Inherited, FontColor -> GrayLevel[0.25]], 
+   Cell[
+    StyleData["Hyperlink"], FontColor -> 
+    RGBColor[0.21176470588235294`, 0.7058823529411765, 0.7490196078431373]], 
+   Cell[
+    StyleData["HyperlinkActive"], FontColor -> 
+    RGBColor[0.996078431372549, 0.3058823529411765, 0.21568627450980393`]], 
+   Cell[
+    StyleData["SubmitButton"], ShowCellBracket -> False, 
+    CellMargins -> {{66, Inherited}, {25, Inherited}}, ShowCellLabel -> False,
+     TextAlignment -> Center, ShowStringCharacters -> False], 
+   Cell[
+    StyleData["SigninText", StyleDefinitions -> StyleData["Text"]], 
+    ShowStringCharacters -> False, FontSize -> 12, FontColor -> 
+    GrayLevel[0.25]], 
+   Cell[
+    StyleData["ButtonLabel", StyleDefinitions -> StyleData["Text"]], 
+    TextAlignment -> Center, ShowStringCharacters -> False, FontFamily -> 
+    "Source Sans Pro", FontSize -> 18, FontWeight -> "DemiBold", FontColor -> 
+    GrayLevel[1]], 
+   Cell[
+    StyleData[
+    "ButtonLabelActive", StyleDefinitions -> StyleData["ButtonLabel"]], 
+    TextAlignment -> Center, ShowStringCharacters -> False, FontColor -> 
+    RGBColor[0.996078431372549, 0.3058823529411765, 0.21568627450980393`]], 
+   Cell[
+    StyleData["Notebook"], ShowAutoSpellCheck -> False], 
+   Cell[
+    StyleData["Subsubsection"], Editable -> True, Selectable -> True, 
+    Deletable -> True, Deployed -> False], 
+   Cell[
+    StyleData["AuthoringSectionLabel"], CellMargins -> {{66, 66}, {0, 50}}, 
+    ShowStringCharacters -> False, FontFamily -> "Source Sans Pro", FontSize -> 
+    16, FontWeight -> "SemiBold", FontColor -> 
+    RGBColor[0.996078431372549, 0.3058823529411765, 0.21568627450980393`]], 
+   Cell[
+    StyleData[
+    "AuthoringSectionLabelExtra", StyleDefinitions -> 
+     StyleData["AuthoringSectionLabel"]], ShowStringCharacters -> False, 
+    FontSize -> 12, FontSlant -> "Plain", FontColor -> GrayLevel[0.7]], 
+   Cell[
+    StyleData[
+    "AuthoringSectionCaption", StyleDefinitions -> StyleData["Text"]], 
+    Editable -> False, Selectable -> False, Deletable -> False, 
+    ShowCellBracket -> False, 
+    CellMargins -> {{66, 66}, {Inherited, Inherited}}, Evaluatable -> False, 
+    CellGroupingRules -> {"GroupTogetherGrouping", 10000.}, FontColor -> 
+    GrayLevel[0.55]], 
+   Cell[
+    StyleData[
+    "AuthoringSectionCaptionStyle", StyleDefinitions -> 
+     StyleData["AuthoringSectionCaption"]]], 
+   Cell[
+    StyleData["AuthoringSection"], Editable -> False, Selectable -> False, 
+    Deletable -> False, CellFrame -> {{0, 0}, {0, 1}}, ShowCellBracket -> 
+    False, ShowGroupOpener -> True, 
+    CellMargins -> {{66, 66}, {Inherited, 40}}, 
+    CellGroupingRules -> {"GroupTogetherGrouping", 10000.}, CellFrameColor -> 
+    GrayLevel[0.85], DefaultNewCellStyle -> "Text"], 
+   Cell[
+    StyleData["ClickToEnterLabel"], Selectable -> False], 
+   Cell[
+    StyleData["TagGrid", StyleDefinitions -> StyleData["Output"]], Deletable -> 
+    False, ShowCellBracket -> False]}, Visible -> False, FrontEndVersion -> 
+  "11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, 2018)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ClickToEnter"->{
+  Cell[558, 20, 548, 16, 96, "Title",ExpressionUUID->"9dae144e-2121-4170-834e-69992a8762e0",
+   CellTags->{"ClickToEnter", "Title"}],
+  Cell[3017, 90, 567, 17, 31, "Text",ExpressionUUID->"c9dc8cc0-0f72-4511-8c6a-f21f87c50b67",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[6121, 181, 566, 17, 31, "Text",ExpressionUUID->"2a8eea5e-82d4-4e8a-a827-a23fd966a579",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[8153, 255, 577, 17, 31, "Text",ExpressionUUID->"9e76a3cf-8159-4e8a-aff8-eab3e2c87357",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[8733, 274, 629, 18, 31, "Text",ExpressionUUID->"14a5ca27-e0bc-427f-918f-3c97ee3358f6",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[12824, 413, 586, 18, 31, "Text",ExpressionUUID->"f8fb1bd6-fe54-4b47-878a-3fd412bda0ac",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[14083, 457, 583, 17, 31, "Text",ExpressionUUID->"b0b63ddb-6885-4261-b985-363b33053c55",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[16770, 548, 578, 18, 31, "Text",ExpressionUUID->"6016c104-e2e7-48b1-8d66-a1ab5a49a5de",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[18751, 611, 595, 18, 31, "Text",ExpressionUUID->"daeb1de0-52cb-41f3-b078-49f2cb3d9c9f",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[23157, 745, 583, 18, 31, "Text",ExpressionUUID->"b45fe1e4-8995-44b2-9487-749318ef3c65",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[24618, 792, 575, 17, 31, "Text",ExpressionUUID->"c895d9c3-f0cb-4f40-8555-8602a078c423",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[33154, 1010, 564, 17, 31, "Text",ExpressionUUID->"68c494d4-be75-435d-881b-62d9b3291a59",
+   CellTags->{"ClickToEnter", "Text"}]},
+ "Title"->{
+  Cell[558, 20, 548, 16, 96, "Title",ExpressionUUID->"9dae144e-2121-4170-834e-69992a8762e0",
+   CellTags->{"ClickToEnter", "Title"}]},
+ "DescriptionOfChallenge"->{
+  Cell[1535, 52, 527, 13, 72, "AuthoringSection",ExpressionUUID->"884ad252-c005-45b8-b0a3-90f35afb7a4c",
+   CellTags->{"DescriptionOfChallenge", "Required"}]},
+ "Required"->{
+  Cell[1535, 52, 527, 13, 72, "AuthoringSection",ExpressionUUID->"884ad252-c005-45b8-b0a3-90f35afb7a4c",
+   CellTags->{"DescriptionOfChallenge", "Required"}],
+  Cell[17373, 570, 498, 13, 72, "AuthoringSection",ExpressionUUID->"a46ab2f1-800c-40f6-b801-1e26345db479",
+   CellTags->{"Solution", "Required"}],
+  Cell[19371, 633, 501, 13, 71, "AuthoringSection",ExpressionUUID->"b742d174-d81f-4206-a973-127ce4b5ab8a",
+   CellTags->{"TestCases", "Required"}]},
+ "Text"->{
+  Cell[3017, 90, 567, 17, 31, "Text",ExpressionUUID->"c9dc8cc0-0f72-4511-8c6a-f21f87c50b67",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[6121, 181, 566, 17, 31, "Text",ExpressionUUID->"2a8eea5e-82d4-4e8a-a827-a23fd966a579",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[8153, 255, 577, 17, 31, "Text",ExpressionUUID->"9e76a3cf-8159-4e8a-aff8-eab3e2c87357",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[14083, 457, 583, 17, 31, "Text",ExpressionUUID->"b0b63ddb-6885-4261-b985-363b33053c55",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[24618, 792, 575, 17, 31, "Text",ExpressionUUID->"c895d9c3-f0cb-4f40-8555-8602a078c423",
+   CellTags->{"ClickToEnter", "Text"}],
+  Cell[33154, 1010, 564, 17, 31, "Text",ExpressionUUID->"68c494d4-be75-435d-881b-62d9b3291a59",
+   CellTags->{"ClickToEnter", "Text"}]},
+ "MoreDetails"->{
+  Cell[3609, 111, 504, 13, 72, "AuthoringSection",ExpressionUUID->"99c2a2e5-ac0c-4d1b-99e9-9ed53e69ed10",
+   CellTags->{"MoreDetails", "Optional"}]},
+ "Optional"->{
+  Cell[3609, 111, 504, 13, 72, "AuthoringSection",ExpressionUUID->"99c2a2e5-ac0c-4d1b-99e9-9ed53e69ed10",
+   CellTags->{"MoreDetails", "Optional"}],
+  Cell[14988, 492, 564, 15, 23, "AuthoringSection",ExpressionUUID->"a77950c3-5627-409e-bd4f-bf40cff395df",
+   CellTags->{"InputSection", "Optional"}],
+  Cell[23765, 767, 495, 13, 72, "AuthoringSection",ExpressionUUID->"62da729f-1469-4b17-a95e-047fd96608dc",
+   CellTags->{"Authors", "Optional"}],
+  Cell[25218, 813, 501, 13, 72, "AuthoringSection",ExpressionUUID->"04a33cce-353b-4c72-9857-3a2e77e133e6",
+   CellTags->{"Categories", "Optional"}],
+  Cell[32189, 982, 504, 13, 72, "AuthoringSection",ExpressionUUID->"28bcb851-091d-466a-a951-47d86a13a011",
+   CellTags->{"AuthorEmail", "Optional"}]},
+ "Input"->{
+  Cell[8733, 274, 629, 18, 31, "Text",ExpressionUUID->"14a5ca27-e0bc-427f-918f-3c97ee3358f6",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[12824, 413, 586, 18, 31, "Text",ExpressionUUID->"f8fb1bd6-fe54-4b47-878a-3fd412bda0ac",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[16770, 548, 578, 18, 31, "Text",ExpressionUUID->"6016c104-e2e7-48b1-8d66-a1ab5a49a5de",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[18751, 611, 595, 18, 31, "Text",ExpressionUUID->"daeb1de0-52cb-41f3-b078-49f2cb3d9c9f",
+   CellTags->{"ClickToEnter", "Input"}],
+  Cell[23157, 745, 583, 18, 31, "Text",ExpressionUUID->"b45fe1e4-8995-44b2-9487-749318ef3c65",
+   CellTags->{"ClickToEnter", "Input"}]},
+ "InputSection"->{
+  Cell[14988, 492, 564, 15, 23, "AuthoringSection",ExpressionUUID->"a77950c3-5627-409e-bd4f-bf40cff395df",
+   CellTags->{"InputSection", "Optional"}]},
+ "Solution"->{
+  Cell[17373, 570, 498, 13, 72, "AuthoringSection",ExpressionUUID->"a46ab2f1-800c-40f6-b801-1e26345db479",
+   CellTags->{"Solution", "Required"}]},
+ "TestCases"->{
+  Cell[19371, 633, 501, 13, 71, "AuthoringSection",ExpressionUUID->"b742d174-d81f-4206-a973-127ce4b5ab8a",
+   CellTags->{"TestCases", "Required"}]},
+ "Authors"->{
+  Cell[23765, 767, 495, 13, 72, "AuthoringSection",ExpressionUUID->"62da729f-1469-4b17-a95e-047fd96608dc",
+   CellTags->{"Authors", "Optional"}]},
+ "Categories"->{
+  Cell[25218, 813, 501, 13, 72, "AuthoringSection",ExpressionUUID->"04a33cce-353b-4c72-9857-3a2e77e133e6",
+   CellTags->{"Categories", "Optional"}]},
+ "AuthorEmail"->{
+  Cell[32189, 982, 504, 13, 72, "AuthoringSection",ExpressionUUID->"28bcb851-091d-466a-a951-47d86a13a011",
+   CellTags->{"AuthorEmail", "Optional"}]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ClickToEnter", 57797, 1520},
+ {"Title", 59430, 1545},
+ {"DescriptionOfChallenge", 59594, 1548},
+ {"Required", 59769, 1551},
+ {"Text", 60235, 1558},
+ {"MoreDetails", 61061, 1571},
+ {"Optional", 61226, 1574},
+ {"Input", 61984, 1585},
+ {"InputSection", 62683, 1596},
+ {"Solution", 62850, 1599},
+ {"TestCases", 63014, 1602},
+ {"Authors", 63177, 1605},
+ {"Categories", 63341, 1608},
+ {"AuthorEmail", 63509, 1611}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 548, 16, 96, "Title",ExpressionUUID->"9dae144e-2121-4170-834e-69992a8762e0",
+ CellTags->{"ClickToEnter", "Title"}],
+Cell[CellGroupData[{
+Cell[1131, 40, 379, 8, 84, "AuthoringSectionCaption",ExpressionUUID->"228ff629-5656-423b-823f-99e344326f71",
+ CellGroupingRules->{"TitleGrouping", -1}],
+Cell[CellGroupData[{
+Cell[1535, 52, 527, 13, 72, "AuthoringSection",ExpressionUUID->"884ad252-c005-45b8-b0a3-90f35afb7a4c",
+ CellTags->{"DescriptionOfChallenge", "Required"}],
+Cell[2065, 67, 386, 7, 101, "AuthoringSectionCaption",ExpressionUUID->"2349e70e-96c0-46d3-a403-1670e8f99ab9"],
+Cell[2454, 76, 78, 1, 29, "AuthoringSectionCaption",ExpressionUUID->"a4825544-e727-4fd0-beaf-c2e2a2348532"],
+Cell[2535, 79, 467, 8, 93, "AuthoringSectionCaption",ExpressionUUID->"eed02536-1090-4436-9c7e-3e2c8944a66b"]
+}, Open  ]],
+Cell[3017, 90, 567, 17, 31, "Text",ExpressionUUID->"c9dc8cc0-0f72-4511-8c6a-f21f87c50b67",
+ CellTags->{"ClickToEnter", "Text"}],
+Cell[CellGroupData[{
+Cell[3609, 111, 504, 13, 72, "AuthoringSection",ExpressionUUID->"99c2a2e5-ac0c-4d1b-99e9-9ed53e69ed10",
+ CellTags->{"MoreDetails", "Optional"}],
+Cell[4116, 126, 382, 7, 101, "AuthoringSectionCaption",ExpressionUUID->"4fdb9550-5f00-4594-b5e4-3f7033aa454b"],
+Cell[4501, 135, 1088, 30, 57, "AuthoringSectionCaption",ExpressionUUID->"f124e7ba-16f8-4c8c-b204-69f794f3eb27"],
+Cell[5592, 167, 73, 1, 29, "AuthoringSectionCaption",ExpressionUUID->"4bc1f280-cd61-4818-87e2-6b5c121b1fb0"],
+Cell[5668, 170, 438, 8, 69, "AuthoringSectionCaption",ExpressionUUID->"2ebef246-d3fc-4945-b42e-4572324e2feb"]
+}, Open  ]],
+Cell[6121, 181, 566, 17, 31, "Text",ExpressionUUID->"2a8eea5e-82d4-4e8a-a827-a23fd966a579",
+ CellTags->{"ClickToEnter", "Text"}],
+Cell[CellGroupData[{
+Cell[6712, 202, 43, 0, 72, "Section",ExpressionUUID->"8df58040-99e1-4793-8902-8fbd5bcfe8ff"],
+Cell[CellGroupData[{
+Cell[6780, 206, 222, 4, 53, "AuthoringSectionCaptionStyle",ExpressionUUID->"eec13032-032f-4160-a76a-90fbe6c339a1"],
+Cell[7005, 212, 48, 0, 29, "AuthoringSectionCaptionStyle",ExpressionUUID->"a30e79fc-4201-4624-a7f6-47a8c276876c"],
+Cell[7056, 214, 398, 12, 55, "AuthoringSectionCaptionStyle",ExpressionUUID->"53b1e471-54b9-4c9f-915c-d148befbdedc"],
+Cell[7457, 228, 239, 8, 30, "AuthoringSectionCaptionStyle",ExpressionUUID->"4e62b807-3a5f-4598-b0c9-aa1a6e24b5ef",
+ Evaluatable->False],
+Cell[7699, 238, 439, 14, 42, "AuthoringSectionCaptionStyle",ExpressionUUID->"e830ef49-367c-46a7-b1c9-e7ddc06720bd"]
+}, Open  ]],
+Cell[8153, 255, 577, 17, 31, "Text",ExpressionUUID->"9e76a3cf-8159-4e8a-aff8-eab3e2c87357",
+ CellTags->{"ClickToEnter", "Text"}],
+Cell[8733, 274, 629, 18, 31, "Text",ExpressionUUID->"14a5ca27-e0bc-427f-918f-3c97ee3358f6",
+ CellTags->{"ClickToEnter", "Input"}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9399, 297, 35, 0, 72, "Subsection",ExpressionUUID->"4ce122ff-62e4-44b9-9b3e-423e206e3769"],
+Cell[CellGroupData[{
+Cell[9459, 301, 239, 4, 77, "AuthoringSectionCaptionStyle",ExpressionUUID->"204f2a07-447a-4cb5-aacc-0e5f9d521dbc"],
+Cell[9701, 307, 48, 0, 29, "AuthoringSectionCaptionStyle",ExpressionUUID->"8263e9d1-f440-433a-9026-70a516c8be37"],
+Cell[9752, 309, 275, 9, 30, "AuthoringSectionCaptionStyle",ExpressionUUID->"36e2233b-72c4-44d7-9020-bdb1b3cd8978",
+ Evaluatable->False],
+Cell[10030, 320, 364, 11, 34, "AuthoringSectionCaptionStyle",ExpressionUUID->"575f10c1-4bbd-4019-9e8a-8475f715d048"],
+Cell[10397, 333, 424, 13, 30, "AuthoringSectionCaptionStyle",ExpressionUUID->"6e040226-ded8-4350-9090-9151939d7f69",
+ Evaluatable->False],
+Cell[10824, 348, 811, 23, 34, "AuthoringSectionCaptionStyle",ExpressionUUID->"16e8b22f-9ff2-41e7-9924-d171f5147928"],
+Cell[11638, 373, 368, 12, 30, "AuthoringSectionCaptionStyle",ExpressionUUID->"ce10524f-df79-4d1f-8e29-30c9c98c3c52",
+ Evaluatable->False],
+Cell[12009, 387, 800, 23, 42, "AuthoringSectionCaptionStyle",ExpressionUUID->"81fd5c02-3746-4d46-97d8-547edfb9d636"]
+}, Open  ]],
+Cell[12824, 413, 586, 18, 31, "Text",ExpressionUUID->"f8fb1bd6-fe54-4b47-878a-3fd412bda0ac",
+ CellTags->{"ClickToEnter", "Input"}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13447, 436, 48, 0, 72, "Subsection",ExpressionUUID->"8206dcb1-8691-4789-8a2c-3ac49a72c3d6"],
+Cell[CellGroupData[{
+Cell[13520, 440, 223, 4, 53, "AuthoringSectionCaptionStyle",ExpressionUUID->"ea6f3a34-f3ac-46bd-be1b-9ba1a2bf580f"],
+Cell[13746, 446, 48, 0, 29, "AuthoringSectionCaptionStyle",ExpressionUUID->"b831c584-3231-4e9d-8289-d526348cf9b0"],
+Cell[13797, 448, 271, 6, 45, "AuthoringSectionCaptionStyle",ExpressionUUID->"3794ab74-5cb4-4f67-9eac-fbb491701cb9"]
+}, Open  ]],
+Cell[14083, 457, 583, 17, 31, "Text",ExpressionUUID->"b0b63ddb-6885-4261-b985-363b33053c55",
+ CellTags->{"ClickToEnter", "Text"}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14703, 479, 260, 9, 53, "Section",ExpressionUUID->"bb086b6d-a718-4c32-a1a4-f1a4ebe0262e"],
+Cell[CellGroupData[{
+Cell[14988, 492, 564, 15, 23, "AuthoringSection",ExpressionUUID->"a77950c3-5627-409e-bd4f-bf40cff395df",
+ CellTags->{"InputSection", "Optional"}],
+Cell[15555, 509, 211, 4, 53, "AuthoringSectionCaption",ExpressionUUID->"0b3f5a0e-47a7-47b4-8128-31f3357bddbb"],
+Cell[15769, 515, 480, 15, 53, "AuthoringSectionCaption",ExpressionUUID->"a07c1a8e-b006-4cf0-8227-b05bd6556c6f"],
+Cell[16252, 532, 503, 13, 37, "AuthoringSectionCaption",ExpressionUUID->"0ac1e7fb-25ef-4488-81ec-bc47cd53944a",
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[16770, 548, 578, 18, 31, "Text",ExpressionUUID->"6016c104-e2e7-48b1-8d66-a1ab5a49a5de",
+ CellTags->{"ClickToEnter", "Input"}],
+Cell[CellGroupData[{
+Cell[17373, 570, 498, 13, 72, "AuthoringSection",ExpressionUUID->"a46ab2f1-800c-40f6-b801-1e26345db479",
+ CellTags->{"Solution", "Required"}],
+Cell[17874, 585, 241, 5, 53, "AuthoringSectionCaption",ExpressionUUID->"25a57beb-383d-4870-857f-93e67afa1552"],
+Cell[18118, 592, 78, 1, 29, "AuthoringSectionCaption",ExpressionUUID->"531311d2-859b-4985-a146-7fc90b380569"],
+Cell[18199, 595, 537, 13, 37, "AuthoringSectionCaption",ExpressionUUID->"5d292a18-2405-488a-adc9-50ae76e8019a",
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[18751, 611, 595, 18, 31, "Text",ExpressionUUID->"daeb1de0-52cb-41f3-b078-49f2cb3d9c9f",
+ CellTags->{"ClickToEnter", "Input"}],
+Cell[CellGroupData[{
+Cell[19371, 633, 501, 13, 71, "AuthoringSection",ExpressionUUID->"b742d174-d81f-4206-a973-127ce4b5ab8a",
+ CellTags->{"TestCases", "Required"}],
+Cell[19875, 648, 1127, 28, 103, "AuthoringSectionCaption",ExpressionUUID->"f19ff4eb-93d8-4493-a3a8-64d79cdb66dc"],
+Cell[21005, 678, 337, 9, 53, "AuthoringSectionCaption",ExpressionUUID->"151ca9d1-b07d-4de9-a66d-6f26b9b5e3b7"],
+Cell[21345, 689, 875, 25, 59, "AuthoringSectionCaption",ExpressionUUID->"790ab939-3e2a-414c-a443-72d6b081d99d",
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[22223, 716, 125, 2, 29, "AuthoringSectionCaption",ExpressionUUID->"789630da-7fe2-4188-b3c8-3e9c70163035"],
+Cell[22351, 720, 791, 22, 37, "AuthoringSectionCaption",ExpressionUUID->"80b2a393-fa72-4788-8994-16716a0450d7",
+ Evaluatable->False,
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[23157, 745, 583, 18, 31, "Text",ExpressionUUID->"b45fe1e4-8995-44b2-9487-749318ef3c65",
+ CellTags->{"ClickToEnter", "Input"}],
+Cell[CellGroupData[{
+Cell[23765, 767, 495, 13, 72, "AuthoringSection",ExpressionUUID->"62da729f-1469-4b17-a95e-047fd96608dc",
+ CellTags->{"Authors", "Optional"}],
+Cell[24263, 782, 340, 7, 69, "AuthoringSectionCaption",ExpressionUUID->"7c87156c-9038-441f-b114-b5c796defd92"]
+}, Open  ]],
+Cell[24618, 792, 575, 17, 31, "Text",ExpressionUUID->"c895d9c3-f0cb-4f40-8555-8602a078c423",
+ CellTags->{"ClickToEnter", "Text"}],
+Cell[CellGroupData[{
+Cell[25218, 813, 501, 13, 72, "AuthoringSection",ExpressionUUID->"04a33cce-353b-4c72-9857-3a2e77e133e6",
+ CellTags->{"Categories", "Optional"}],
+Cell[25722, 828, 219, 5, 45, "AuthoringSectionCaption",ExpressionUUID->"6ea522fa-1103-4807-b709-1c3e08fddc03"]
+}, Open  ]],
+Cell[25956, 836, 6208, 142, 109, "TagGrid",ExpressionUUID->"423adac6-0817-4fd0-ba31-dcf8bdd49907"],
+Cell[CellGroupData[{
+Cell[32189, 982, 504, 13, 72, "AuthoringSection",ExpressionUUID->"28bcb851-091d-466a-a951-47d86a13a011",
+ CellTags->{"AuthorEmail", "Optional"}],
+Cell[32696, 997, 443, 10, 69, "AuthoringSectionCaption",ExpressionUUID->"7bd1ed36-3ba2-43ab-9be4-36c62221871b"]
+}, Open  ]],
+Cell[33154, 1010, 564, 17, 31, "Text",ExpressionUUID->"68c494d4-be75-435d-881b-62d9b3291a59",
+ CellTags->{"ClickToEnter", "Text"}]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
