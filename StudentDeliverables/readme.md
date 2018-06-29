@@ -6,17 +6,19 @@ This is your main notebook to collect all your project work during the summer sc
 * Write full record of your project
 * Include your GitHub repository link
 * Add links to additional content such as data, references, external code, microsites, etc. - anything that could not fit in notebook
-* Save file as FirstnameLastname_ProjectNotebook2018.nb
+* Save file as Firstname-Lastname-Project.nb
 * Updated and commit regularly to your GitHub repo
 * Send your mentor the link to your repo 
 
 # ComputationalEssayTemplate.nb
 Use this to turn in your Computational Essay. Follow the guidelines in the template while composing your essay.
 
+* Save file as Firstname-Lastname-Essay.nb
+
 # CommunityPost.md
 A simple .md file you can use to contain all the content that goes in to your community post
 
-* Save file as FirstnameLastname_CommunityPost.md
+* Save file as Firstname-Lastname-CommunityPost.md
 * Use your Project Notebook full record as basis for Community post
 * Make it as detailed and instructive as possible 
 * How to write a community post: http://wolfr.am/READ-1ST
