@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     43397,        968]
+NotebookDataLength[     43400,        968]
 NotebookOptionsPosition[     33732,        780]
-NotebookOutlinePosition[     38807,        898]
-CellTagsIndexPosition[     38602,        889]
+NotebookOutlinePosition[     38810,        898]
+CellTagsIndexPosition[     38605,        889]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -854,9 +854,9 @@ StyleDefinitions->Notebook[{
     GrayLevel[0.85]], 
    Cell[
     StyleData["TemplateDivider", StyleDefinitions -> StyleData["Text"]], 
-    Editable -> False, Selectable -> True, Deletable -> True, PageWidth -> 
+    Editable -> False, Selectable -> False, Deletable -> False, PageWidth -> 
     WindowWidth, CellFrame -> {{False, False}, {8, False}}, ShowCellBracket -> 
-    True, CellMargins -> {{0, -10}, {0, 0}}, 
+    False, CellMargins -> {{0, -10}, {0, 0}}, 
     CellBracketOptions -> {"OverlapContent" -> True}, Deployed -> True, 
     CellFrameMargins -> {{10, 10}, {1, 1}}, CellFrameColor -> 
     RGBColor[1, 0.5, 0], Background -> 
@@ -888,11 +888,11 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"AuthorInfo", 37784, 871},
- {"LastModified", 37941, 874},
- {"PosterContent", 38099, 877},
- {"PresentationContent", 38267, 880},
- {"ProjectNotes", 38436, 883}
+ {"AuthorInfo", 37787, 871},
+ {"LastModified", 37944, 874},
+ {"PosterContent", 38102, 877},
+ {"PresentationContent", 38270, 880},
+ {"ProjectNotes", 38439, 883}
  }
 *)
 (*NotebookFileOutline
